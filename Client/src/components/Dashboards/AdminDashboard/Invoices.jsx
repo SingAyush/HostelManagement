@@ -8,7 +8,7 @@ function Invoices() {
     setProgress(30);
     let hostel = JSON.parse(localStorage.getItem("hostel"));
     try {
-      const res = await fetch("hostel-management-l4jb.vercel.app/api/invoice/generate", {
+      const res = await fetch("https://hostelmanagement-ju4x.onrender.com/api/invoice/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -60,7 +60,7 @@ function Invoices() {
   const approveInvoice = async (id) => {
     setProgress(30);
     try {
-      const res = await fetch("hostel-management-l4jb.vercel.app/api/invoice/update", {
+      const res = await fetch("https://hostelmanagement-ju4x.onrender.com/api/invoice/update", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -112,7 +112,7 @@ function Invoices() {
     setProgress(30);
     let hostel = JSON.parse(localStorage.getItem("hostel"));
     try {
-      const res = await fetch("hostel-management-l4jb.vercel.app/api/invoice/getbyid", {
+      const res = await fetch("https://hostelmanagement-ju4x.onrender.com/api/invoice/getbyid", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
