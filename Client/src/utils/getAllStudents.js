@@ -1,7 +1,7 @@
 const getAllStudents = async () => {
   const hostel = JSON.parse(localStorage.getItem("hostel"))._id;
   const result = await fetch(
-    "http://localhost:3000/api/student/get-all-students",
+    "hostel-management-l4jb.vercel.app/api/student/get-all-students",
     {
       method: "POST",
       headers: {
