@@ -18,7 +18,7 @@ const List = () => {
   ]);
   useEffect(() => {
     let student = JSON.parse(localStorage.getItem("student"));
-    fetch("hostel-management-l4jb.vercel.app/api/invoice/student", {
+    fetch("https://hostelmanagement-ju4x.onrender.com/api/invoice/student", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -119,7 +119,7 @@ function Home() {
 
   const getAttendance = async () => {
     let student = JSON.parse(localStorage.getItem("student"));
-    const res = await fetch("hostel-management-l4jb.vercel.app/api/attendance/get", {
+    const res = await fetch("https://hostelmanagement-ju4x.onrender.com/api/attendance/get", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
