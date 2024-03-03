@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <nav className="flex align-center justify-between text-white md:px-20 bg-gray-700">
       <Link to="/" className="flex z-10 md:py-3 font-bold text-xl lg:text-4xl">
-        <img src="https://res.cloudinary.com/dqbcbqcbr/image/upload/v1709374170/SAC_logo_2_hp2578.svg" alt="." ></img>
+        
         &nbsp; NITR
       </Link>
       <div
