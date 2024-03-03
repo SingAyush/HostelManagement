@@ -24,7 +24,7 @@ export default function SignIn() {
       password: pass,
     };
 
-    let response = await fetch("hostel-management-l4jb.vercel.app/api/auth/login", {
+    let response = await fetch("https://hostelmanagement-ju4x.onrender.com/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -37,7 +37,7 @@ export default function SignIn() {
     if (result.success) {
       localStorage.setItem("token", result.data.token);
       let student = await fetch(
-        "hostel-management-l4jb.vercel.app/api/student/get-student",
+        "https://hostelmanagement-ju4x.onrender.com/api/student/get-student",
         {
           method: "POST",
           headers: {
