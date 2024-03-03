@@ -27,7 +27,7 @@ function RegisterStudent() {
         password: password,
       };
       const res = await fetch(
-        "http://localhost:3000/api/student/register-student",
+        "http://hostel-management-l4jb.vercel.app/api/student/register-student",
         {
           method: "POST",
           headers: {
