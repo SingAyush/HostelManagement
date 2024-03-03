@@ -9,7 +9,7 @@ function Attendance() {
   const getALL = async () => {
     setProgress(30);
     const marked = await fetch(
-      "http://localhost:3000/api/attendance/getHostelAttendance",
+      "https://hostelmanagementsys.vercel.app/api/attendance/getHostelAttendance",
       {
         method: "POST",
         headers: {
@@ -62,7 +62,7 @@ function Attendance() {
   const [markedStudents, setMarkedStudents] = useState([]);
 
   const markAttendance = async (id, isPresent) => {
-    const data = await fetch(`http://localhost:3000/api/attendance/mark`, {
+    const data = await fetch(`https://hostelmanagementsys.vercel.app/api/attendance/mark`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
