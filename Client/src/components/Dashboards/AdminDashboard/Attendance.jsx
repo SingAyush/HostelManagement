@@ -62,7 +62,7 @@ function Attendance() {
   const [markedStudents, setMarkedStudents] = useState([]);
 
   const markAttendance = async (id, isPresent) => {
-    const data = await fetch(`https://hostelmanagementsys.vercel.app/api/attendance/mark`, {
+    const data = await fetch(`https://hostelmanagement-ju4x.onrender.com/api/attendance/mark`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
