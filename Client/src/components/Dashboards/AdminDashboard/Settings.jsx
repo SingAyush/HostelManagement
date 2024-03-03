@@ -14,7 +14,7 @@ function Settings() {
       newPassword: pass,
     };
 
-    let result = await fetch("hostel-management-l4jb.vercel.app/api/auth/change-password", {
+    let result = await fetch("https://hostelmanagement-ju4x.onrender.com/api/auth/change-password", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
