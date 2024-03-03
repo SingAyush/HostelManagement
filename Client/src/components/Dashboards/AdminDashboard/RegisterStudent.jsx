@@ -27,7 +27,7 @@ function RegisterStudent() {
         password: password,
       };
       const res = await fetch(
-        "http://hostel-management-l4jb.vercel.app/api/student/register-student",
+        "https://hostelmanagement-ju4x.onrender.com/api/student/register-student",
         {
           method: "POST",
           headers: {
