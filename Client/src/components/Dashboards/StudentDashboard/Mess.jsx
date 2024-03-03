@@ -15,7 +15,7 @@ function Mess() {
       return_date: returnDate,
     };
 
-    let response = await fetch("hostel-management-l4jb.vercel.app/api/Messoff/request", {
+    let response = await fetch("https://hostelmanagement-ju4x.onrender.com/api/Messoff/request", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -95,7 +95,7 @@ function Mess() {
     let student = JSON.parse(localStorage.getItem("student"));
     setLoading(true);
     if (student) {
-      fetch("hostel-management-l4jb.vercel.app/api/Messoff/count", {
+      fetch("https://hostelmanagement-ju4x.onrender.com/api/Messoff/count", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
