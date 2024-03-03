@@ -8,7 +8,7 @@ function Suggestions() {
   const getSuggestions = async () => {
     const hostel = JSON.parse(localStorage.getItem("hostel"));
     const response = await fetch(
-      "http://hostel-management-l4jb.vercel.app/api/suggestion/hostel",
+      "https://hostelmanagement-ju4x.onrender.com/api/suggestion/hostel",
       {
         method: "POST",
         headers: {
@@ -39,7 +39,7 @@ function Suggestions() {
     setLoader(true);
     console.log(id);
     const response = await fetch(
-      "http://hostel-management-l4jb.vercel.app/api/suggestion/update",
+      "https://hostelmanagement-ju4x.onrender.com/api/suggestion/update",
       {
         method: "POST",
         headers: {
