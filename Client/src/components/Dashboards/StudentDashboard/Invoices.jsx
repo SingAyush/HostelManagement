@@ -8,7 +8,7 @@ function Invoices() {
 
   useEffect(() => {
     let student = JSON.parse(localStorage.getItem("student"));
-    fetch("hostel-management-l4jb.vercel.app/api/invoice/student", {
+    fetch("https://hostelmanagement-ju4x.onrender.com/api/invoice/student", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
