@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 function AllStudents() {
   const getCSV = async () => {
     const hostel = JSON.parse(localStorage.getItem("hostel"))._id;
-    const res = await fetch("http://localhost:3000/api/student/csv", {
+    const res = await fetch("https://hostelmanagementsys.vercel.app/api/student/csv", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -47,7 +47,7 @@ function AllStudents() {
 
   const deleteStudent = async (id) => {
     const res = await fetch(
-      "http://localhost:3000/api/student/delete-student",
+      "https://hostelmanagementsys.vercel.app/api/student/delete-student",
       {
         method: "DELETE",
         headers: {
