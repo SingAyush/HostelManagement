@@ -7,7 +7,7 @@ function Suggestions() {
   const registerSuggestions = async (e) => {
     e.preventDefault();
     const student = JSON.parse(localStorage.getItem("student"));
-    const response = await fetch("hostel-management-l4jb.vercel.app/api/suggestion/register", {
+    const response = await fetch("https://hostelmanagement-ju4x.onrender.com/api/suggestion/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
