@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 function Complaints() {
   const getComplaints = async () => {
     const hostel = JSON.parse(localStorage.getItem("hostel"))._id;
-    const response = await fetch(`https://hostelmanagementsys.vercel.app/api/complaint/hostel`, {
+    const response = await fetch(`hostel-management-l4jb.vercel.app/api/complaint/hostel`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
