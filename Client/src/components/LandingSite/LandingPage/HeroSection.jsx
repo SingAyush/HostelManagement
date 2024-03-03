@@ -12,7 +12,7 @@ function HeroSection() {
           Hostel <span className="text-red-500">Management</span> System
         </h1>
         <p className="py-10 text-2xl text-black pb-">
-          One Solution For All Of The Hostel&apos;s Needs
+          National Institute Of Technology, Rourkela
         </p>
         <div className="py-20">
           <Link
