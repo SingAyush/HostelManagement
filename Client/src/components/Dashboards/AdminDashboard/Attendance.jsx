@@ -9,7 +9,7 @@ function Attendance() {
   const getALL = async () => {
     setProgress(30);
     const marked = await fetch(
-      "https://hostel-management-l4jb.vercel.app/api/attendance/getHostelAttendance",
+      "https://hostelmanagement-ju4x.onrender.com/api/attendance/getHostelAttendance",
       {
         method: "POST",
         headers: {
