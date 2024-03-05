@@ -6,13 +6,13 @@ const List = () => {
     {
       title: "Mess bill",
       date: "21-02-2024",
-      amount: "Rs. 990",
+      amount: "Rs. 999",
       status: "pending",
     },
     {
       title: "Mess bill",
       date: "20-01-2024",
-      amount: "Rs. 690",
+      amount: "Rs. 6969",
       status: "non-pending",
     },
   ]);
