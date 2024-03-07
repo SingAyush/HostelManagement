@@ -2,31 +2,31 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const ComplaintSchema = new Schema({
-    student:{
+    student: {
         type:Schema.Types.ObjectId,
         ref:'student'
     },
-    hostel:{
+    hostel: {
         type:Schema.Types.ObjectId,
         ref:'hostel'
     },
-    type:{
+    type: {
         type:String,
         required:true
     },
-    title:{
+    title: {
         type:String,
         required:true
     },
-    description:{
+    description: {
         type:String,
         required:true
     },
-    status:{
+    status: {
         type:String,
         default:'pending'
     },
-    date:{
+    date: {
         type:Date,
         default:Date.now
     }
